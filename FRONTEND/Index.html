@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--IMPORTS-->
+
+    <link rel="stylesheet" href="./Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg glass-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#home">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-lg-4 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item nav-divider" role="presentation" aria-hidden="true">
+                        <span class="divider-square">/</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertise">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HERO SECTION-->
+    <main id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-header">
+                <div class="hero-text">
+                    <h1 class="hero-title">Kevin Guzman</h1>
+                    <p class="hero-subtitle">FullStack Developer</p>
+                </div>
+                <div class="profile-photo" role="img" aria-label="Profile photo placeholder"></div>
+            </div>
+            <a class="scroll-down" href="#expertise" aria-label="Ir a la sección de Expertise">
+                <span class="scroll-icon"></span>
+            </a>
+        </div>
+    </main>
+
+    <!--EXPERTISE SECTION-->
+    <section id="expertise" class="expertise">
+        <div class="container expertise-container text-center">
+            <span class="section-eyebrow">Areas de Especialización</span>
+            <h2 class="section-title">Expertise</h2>
+            <p class="section-description">Habilidades clave que combinan estrategia, desarrollo y seguridad.</p>
+
+            <div class="expertise-diamond" aria-label="Áreas de Expertise">
+                <div class="diamond-core">
+                    <div class="diamond-quadrant quadrant-top">
+                        <div class="quadrant-content">
+                            <div class="quadrant-icon" aria-hidden="true">🌐</div>
+                            <div class="quadrant-info">
+                                <span class="quadrant-title">Mobile Dev</span>
+                                <p class="quadrant-text">Apps nativas y progresivas centradas en experiencia fluida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diamond-quadrant quadrant-right">
+                        <div class="quadrant-content">
+                            <div class="quadrant-icon" aria-hidden="true">🧠</div>
+                            <div class="quadrant-info">
+                                <span class="quadrant-title">FullStack Dev</span>
+                                <p class="quadrant-text">Arquitecturas robustas de front y back integradas con APIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diamond-quadrant quadrant-left">
+                        <div class="quadrant-content">
+                            <div class="quadrant-icon" aria-hidden="true">📊</div>
+                            <div class="quadrant-info">
+                                <span class="quadrant-title">Analyst</span>
+                                <p class="quadrant-text">Inteligencia de datos accionable para decisiones estratégicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diamond-quadrant quadrant-bottom">
+                        <div class="quadrant-content">
+                            <div class="quadrant-icon" aria-hidden="true">🛡️</div>
+                            <div class="quadrant-info">
+                                <span class="quadrant-title">CiberSecurity</span>
+                                <p class="quadrant-text">Entornos protegidos con auditorías y respuestas preventivas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
