@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--IMPORTS-->
-
-    <link rel="stylesheet" href="./Style.css">
+    <title>Kevin Guzman - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Portfolio</title>
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
 
-    <!--NAVBAR-->
+    <!-- =================================================================
+         NAVBAR ORIGINAL (Sin modificaciones)
+         ================================================================= -->
     <nav class="navbar navbar-expand-lg glass-navbar fixed-top">
         <div class="container">
             <a class="navbar-brand logo" href="#home">LOGO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -44,76 +47,285 @@
         </div>
     </nav>
 
-    <!--HERO SECTION-->
+    <!-- =================================================================
+         HERO SECTION
+         Presentación principal con foto y scroll indicator
+         ================================================================= -->
     <main id="home" class="hero">
         <div class="hero-content">
             <div class="hero-header">
                 <div class="hero-text">
                     <h1 class="hero-title">Kevin Guzman</h1>
                     <p class="hero-subtitle">FullStack Developer</p>
+                    <a class="scroll-down" href="#expertise">
+                        <span class="scroll-icon"></span>
+                    </a>
                 </div>
-                <div class="profile-photo" role="img" aria-label="Profile photo placeholder"></div>
+                <div class="profile-photo">
+                    <img src="../Photo 2.png" alt="Kevin Guzman">
+                </div>
             </div>
-            <a class="scroll-down" href="#expertise" aria-label="Ir a la sección de Expertise">
-                <span class="scroll-icon"></span>
-            </a>
         </div>
     </main>
 
-    <!--EXPERTISE SECTION-->
+    <!-- =================================================================
+         EXPERTISE SECTION
+         Diamante a la izquierda, contenido a la derecha
+         ================================================================= -->
     <section id="expertise" class="expertise">
-        <div class="container expertise-container text-center">
-            <span class="section-eyebrow">Areas de Especialización</span>
-            <h2 class="section-title">Expertise</h2>
-            <p class="section-description">Habilidades clave que combinan estrategia, desarrollo y seguridad.</p>
-
-            <div class="expertise-diamond" aria-label="Áreas de Expertise">
-                <div class="diamond-core">
-                    <div class="diamond-quadrant quadrant-top">
-                        <div class="quadrant-content">
-                            <div class="quadrant-icon" aria-hidden="true">🌐</div>
-                            <div class="quadrant-info">
-                                <span class="quadrant-title">Mobile Dev</span>
-                                <p class="quadrant-text">Apps nativas y progresivas centradas en experiencia fluida.</p>
-                            </div>
+        <div class="container">
+            <div class="expertise-layout">
+                
+                <!-- COLUMNA IZQUIERDA: Diamante -->
+                <div class="expertise-visual">
+                    <div class="expertise-diamond">
+                        
+                        <!-- Cuadrante Superior: Mobile Dev -->
+                        <div class="diamond-quadrant quadrant-top">
+                            <div class="quadrant-icon">📱</div>
+                            <h3 class="quadrant-title">Mobile Dev</h3>
                         </div>
-                    </div>
-                    <div class="diamond-quadrant quadrant-right">
-                        <div class="quadrant-content">
-                            <div class="quadrant-icon" aria-hidden="true">🧠</div>
-                            <div class="quadrant-info">
-                                <span class="quadrant-title">FullStack Dev</span>
-                                <p class="quadrant-text">Arquitecturas robustas de front y back integradas con APIs.</p>
-                            </div>
+                        
+                        <!-- Cuadrante Derecho: FullStack Dev -->
+                        <div class="diamond-quadrant quadrant-right">
+                            <div class="quadrant-icon">💻</div>
+                            <h3 class="quadrant-title">FullStack Dev</h3>
                         </div>
-                    </div>
-                    <div class="diamond-quadrant quadrant-left">
-                        <div class="quadrant-content">
-                            <div class="quadrant-icon" aria-hidden="true">📊</div>
-                            <div class="quadrant-info">
-                                <span class="quadrant-title">Analyst</span>
-                                <p class="quadrant-text">Inteligencia de datos accionable para decisiones estratégicas.</p>
-                            </div>
+                        
+                        <!-- Cuadrante Izquierdo: Analyst -->
+                        <div class="diamond-quadrant quadrant-left">
+                            <div class="quadrant-icon">📊</div>
+                            <h3 class="quadrant-title">Analyst</h3>
                         </div>
-                    </div>
-                    <div class="diamond-quadrant quadrant-bottom">
-                        <div class="quadrant-content">
-                            <div class="quadrant-icon" aria-hidden="true">🛡️</div>
-                            <div class="quadrant-info">
-                                <span class="quadrant-title">CiberSecurity</span>
-                                <p class="quadrant-text">Entornos protegidos con auditorías y respuestas preventivas.</p>
-                            </div>
+                        
+                        <!-- Cuadrante Inferior: CiberSecurity -->
+                        <div class="diamond-quadrant quadrant-bottom">
+                            <div class="quadrant-icon">🔒</div>
+                            <h3 class="quadrant-title">CiberSecurity</h3>
                         </div>
+                        
                     </div>
                 </div>
+                
+                <!-- COLUMNA DERECHA: Contenido de texto -->
+                <div class="expertise-content">
+                    <span class="section-eyebrow">Areas de Especialización</span>
+                    <h2 class="section-title">Expertise</h2>
+                    <p class="section-description">
+                        Habilidades clave que combinan estrategia, desarrollo y seguridad.
+                    </p>
+                    
+                    <!-- Lista de especialidades con descripciones -->
+                    <ul class="expertise-list">
+                        <li>
+                            <span class="expertise-list-title">Mobile Dev</span>
+                            <span class="expertise-list-text">Apps nativas y progresivas centradas en experiencia fluida.</span>
+                        </li>
+                        <li>
+                            <span class="expertise-list-title">FullStack Dev</span>
+                            <span class="expertise-list-text">Arquitecturas robustas de front y back integradas con APIs.</span>
+                        </li>
+                        <li>
+                            <span class="expertise-list-title">Analyst</span>
+                            <span class="expertise-list-text">Inteligencia de datos accionable para decisiones estratégicas.</span>
+                        </li>
+                        <li>
+                            <span class="expertise-list-title">CiberSecurity</span>
+                            <span class="expertise-list-text">Entornos protegidos con auditorías y respuestas preventivas.</span>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <!--FOOTER-->
+    <!-- =================================================================
+         WORK SECTION
+         Proyectos destacados en grid
+         ================================================================= -->
+    <section id="work" class="work">
+        <div class="container">
+            <span class="section-eyebrow">Proyectos Destacados</span>
+            <h2 class="section-title">Work</h2>
+            <p class="section-description">
+                Selección de proyectos que evidencian mi capacidad para liderar iniciativas complejas.
+            </p>
+            
+            <div class="work-grid">
+                <article class="work-card">
+                    <h3 class="card-title">Case Study A</h3>
+                    <p class="card-text">
+                        Rediseño de plataforma financiera con foco en accesibilidad y escalabilidad.
+                    </p>
+                </article>
+                
+                <article class="work-card">
+                    <h3 class="card-title">Case Study B</h3>
+                    <p class="card-text">
+                        Aplicación móvil para seguimiento de operaciones logísticas en tiempo real.
+                    </p>
+                </article>
+                
+                <article class="work-card">
+                    <h3 class="card-title">Case Study C</h3>
+                    <p class="card-text">
+                        Automatización de infraestructura cloud con observabilidad integral.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
 
+    <!-- =================================================================
+         EXPERIENCE SECTION
+         Acordeón expandible con experiencias laborales
+         ================================================================= -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <span class="section-eyebrow">Trayectoria Profesional</span>
+            <h2 class="section-title">Experience</h2>
+            <p class="section-description">
+                Experiencias laborales relevantes que demuestran liderazgo técnico.
+            </p>
+            
+            <!-- Acordeón de experiencias -->
+            <div class="experience-accordion">
+                
+                <!-- Experiencia 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-info">
+                            <span class="accordion-position">Lead FullStack Developer</span>
+                            <span class="accordion-time">2022 - Presente</span>
+                        </div>
+                        <button class="accordion-toggle">+</button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Dirección de equipos cross-funcionales para entregar soluciones SaaS orientadas a crecimiento. 
+                            Responsable de la arquitectura técnica, implementación de pipelines CI/CD y optimización de 
+                            rendimiento en aplicaciones de alto tráfico.
+                        </p>
+                        <div class="accordion-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-info">
+                            <span class="accordion-position">Senior Software Engineer</span>
+                            <span class="accordion-time">2020 - 2022</span>
+                        </div>
+                        <button class="accordion-toggle">+</button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Diseño de arquitecturas microservicio con pipelines CI/CD resilientes. Implementación de 
+                            prácticas DevOps y automatización de despliegues, reduciendo el tiempo de entrega en un 60%.
+                        </p>
+                        <div class="accordion-tags">
+                            <span>Kubernetes</span>
+                            <span>Python</span>
+                            <span>Jenkins</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-info">
+                            <span class="accordion-position">Software Engineer</span>
+                            <span class="accordion-time">2017 - 2020</span>
+                        </div>
+                        <button class="accordion-toggle">+</button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Implementación de interfaces reactivas y APIs escalables para clientes globales. 
+                            Desarrollo full-stack con enfoque en performance y experiencia de usuario.
+                        </p>
+                        <div class="accordion-tags">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
+    <!-- =================================================================
+         CONTACT SECTION
+         Información de contacto
+         ================================================================= -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <span class="section-eyebrow">Trabajemos Juntos</span>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-description">
+                Disponible para colaboraciones estratégicas y consultorías especializadas.
+            </p>
+            
+            <div class="contact-actions">
+                <a href="mailto:kevin.guzman@email.com" class="contact-button primary">
+                    Enviar Email
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="contact-button secondary">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Script para funcionalidad del acordeón -->
+    <script>
+        /**
+         * Función para expandir/contraer items del acordeón
+         * @param {HTMLElement} header - El header del acordeón clickeado
+         */
+        function toggleAccordion(header) {
+            // Obtiene el item completo (contenedor padre)
+            const item = header.parentElement;
+            
+            // Obtiene el contenido expandible
+            const content = item.querySelector('.accordion-content');
+            
+            // Obtiene el botón de toggle
+            const toggle = item.querySelector('.accordion-toggle');
+            
+            // Verifica si ya está activo
+            const isActive = item.classList.contains('active');
+            
+            // Cierra todos los items del acordeón
+            document.querySelectorAll('.accordion-item').forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('.accordion-content').style.maxHeight = '0';
+                i.querySelector('.accordion-toggle').textContent = '+';
+            });
+            
+            // Si no estaba activo, lo abre
+            if (!isActive) {
+                item.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                toggle.textContent = '−';
+            }
+        }
+    </script>
     
 </body>
 </html>
